@@ -1,0 +1,205 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+
+header.bg-dark.py-5 {
+  background: url(https://www.creoate.com/assets/images/homepage/banner-BG.webp) no-repeat center center/cover;
+}
+
+.member{
+  background-image: url(https://demo.webtend.net/html/qichen/assets/images/bg/dot-bg.png);
+}
+.dot-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-repeat: repeat;
+  background-size: contain;
+}
+.bg_cover {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.light-red-bg {
+  background-color: rgba(223, 63, 0, 0.07);
+}
+
+.z-1 {
+  z-index: 1;
+}
+.p-r {
+  position: relative;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+}
+.pt-130 {
+  padding-top: 130px;
+}
+
+.section-title .sub-title {
+  margin-bottom: 10px;
+}
+.sub-title {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #DF3F00;
+}
+
+.sub-title:before {
+  background: url(https://demo.webtend.net/html/qichen/assets/images/prev-arrow.png);
+  -webkit-margin-end: 25px;
+  margin-inline-end: 25px;
+}
+
+.sub-title:before, .sub-title:after {
+  content: "";
+  width: 70px;
+  height: 18px;
+  background-repeat: no-repeat;
+}
+
+.main-btn.filled-btn {
+  color: #0E1317;
+  border: 1px solid rgba(26, 26, 26, 0.102);
+}
+
+.main-btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 18px 40px;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-radius: 7px;
+  color: #fff;
+  line-height: 24px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+.reservation-style-one form.reservation-form .nice-select, .reservation-style-one form.reservation-form .form_control {
+  height: 75px;
+  background-color: #FBF8F5;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: #0E1317;
+}
+.reservation-style-one form.reservation-form .nice-select {
+  padding: 0 30px;
+  line-height: 75px;
+}
+
+
+.reservation-style-one form.reservation-form .nice-select, .reservation-style-one form.reservation-form .form_control {
+  height: 75px;
+  background-color: #FBF8F5;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: #0E1317;
+}
+
+.form_control {
+  width: 100%;
+  padding: 0 30px;
+  height: 60px;
+  border: none;
+}
+
+.collapse {
+  visibility: visible;
+}
+
+
+.cart .card {
+  --mdb-card-spacer-y: 1.5rem;
+  --mdb-card-spacer-x: 1.5rem;
+  --mdb-card-title-spacer-y: 0.5rem;
+  --mdb-card-border-width: 1px;
+  --mdb-card-border-color: var(--mdb-border-color-translucent);
+  --mdb-card-border-radius: 0.5rem;
+  --mdb-card-box-shadow: 0 2px 15px -3px rgba(0,0,0,0.07),0 10px 20px -2px rgba(0,0,0,0.04);
+  --mdb-card-inner-border-radius: calc(0.5rem - 1px);
+  --mdb-card-cap-padding-y: 0.75rem;
+  --mdb-card-cap-padding-x: 1.5rem;
+  --mdb-card-cap-bg: hsla(0,0%,100%,0);
+  --mdb-card-bg: #fff;
+  --mdb-card-img-overlay-padding: 1.5rem;
+  --mdb-card-group-margin: 0.75rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: var(--mdb-card-height);
+  word-wrap: break-word;
+  background-color: var(--mdb-card-bg);
+  background-clip: border-box;
+  border: var(--mdb-card-border-width) solid var(--mdb-card-border-color);
+  border-radius: var(--mdb-card-border-radius);
+  box-shadow: var(--mdb-card-box-shadow);
+}
+.cart .card-header {
+  padding: var(--mdb-card-cap-padding-y) var(--mdb-card-cap-padding-x);
+  margin-bottom: 0;
+  color: var(--mdb-card-cap-color);
+  background-color: var(--mdb-card-cap-bg);
+  border-bottom: var(--mdb-card-border-width) solid var(--mdb-card-border-color);
+}
+.cart .card{
+  border: 1px solid #e5e7eb;
+}
+.cart-summery{
+  background: #EAE8E8;
+}
+
+.payment-cards {
+  display: flex;
+}
